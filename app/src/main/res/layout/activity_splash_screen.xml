@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/baseColor"
+    tools:context=".SplashScreen">
+
+<!--    <com.airbnb.lottie.LottieAnimationView-->
+<!--        android:id="@+id/animation_title"-->
+<!--        android:layout_width="@dimen/layout_250"-->
+<!--        android:layout_height="@dimen/layout200"-->
+<!--        android:layout_marginTop="@dimen/layout100"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:lottie_autoPlay="true"-->
+<!--        app:lottie_loop="true"-->
+<!--        app:lottie_rawRes="@raw/basket" />-->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/layout_250"
+        android:layout_height="@dimen/layout200"
+        android:layout_marginTop="@dimen/layout100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tittle" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="@dimen/layout120"
+        android:layout_height="@dimen/layout120"
+        android:layout_marginTop="@dimen/margin50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/batu" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="@dimen/layout120"
+        android:layout_height="@dimen/layout120"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/gunting" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="@dimen/layout120"
+        android:layout_height="@dimen/layout120"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/kertas" />
+</androidx.constraintlayout.widget.ConstraintLayout>

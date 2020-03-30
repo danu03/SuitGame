@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/baseColor"
+    tools:context=".VsPlayerActivity">
+
+    <ImageView
+        android:id="@+id/ivtitle"
+        android:layout_width="@dimen/layout200"
+        android:layout_height="@dimen/layout140"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tittle" />
+
+    <ImageView
+        android:id="@+id/ivpemain1"
+        android:layout_width="@dimen/layout150"
+        android:layout_height="@dimen/layout40"
+        android:layout_marginStart="@dimen/margin30"
+        android:layout_marginTop="@dimen/margin10"
+        android:src="@drawable/pemain1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivtitle" />
+
+    <ImageView
+        android:id="@+id/ivbatu1"
+        android:layout_width="@dimen/layout100"
+        android:layout_height="@dimen/layout100"
+        android:layout_marginStart="@dimen/margin30"
+        android:layout_marginTop="@dimen/margin10"
+        android:padding="@dimen/padding5"
+        android:contentDescription="@string/batu"
+        android:src="@drawable/batu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivpemain1" />
+
+    <ImageView
+        android:id="@+id/ivkertas1"
+        android:layout_width="@dimen/layout100"
+        android:layout_height="@dimen/layout100"
+        android:layout_marginStart="@dimen/margin30"
+        android:layout_marginTop="@dimen/margin20"
+        android:contentDescription="@string/kertas"
+        android:padding="@dimen/padding5"
+        android:src="@drawable/kertas"
+        app:layout_constraintEnd_toEndOf="@+id/ivbatu1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivbatu1" />
+
+    <ImageView
+        android:id="@+id/ivgunting1"
+        android:layout_width="@dimen/layout100"
+        android:layout_height="@dimen/layout100"
+        android:layout_marginStart="@dimen/margin30"
+        android:layout_marginTop="@dimen/margin20"
+        android:contentDescription="@string/gunting"
+        android:padding="@dimen/padding5"
+        android:src="@drawable/gunting"
+        app:layout_constraintEnd_toEndOf="@+id/ivkertas1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivkertas1" />
+
+    <ImageView
+        android:id="@+id/ivcomp"
+        android:layout_width="@dimen/layout150"
+        android:layout_height="@dimen/layout40"
+        android:layout_marginTop="@dimen/margin10"
+        android:src="@drawable/com"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ivbatu2"
+        app:layout_constraintTop_toBottomOf="@+id/ivtitle" />
+
+    <ImageView
+        android:id="@+id/ivbatu2"
+        android:layout_width="@dimen/layout100"
+        android:layout_height="@dimen/layout100"
+        android:layout_marginTop="@dimen/margin10"
+        android:layout_marginEnd="@dimen/margin30"
+        android:padding="@dimen/padding5"
+        android:contentDescription="@string/batu"
+        android:src="@drawable/batu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivcomp" />
+
+    <ImageView
+        android:id="@+id/ivkertas2"
+        android:layout_width="@dimen/layout100"
+        android:layout_height="@dimen/layout100"
+        android:layout_marginTop="@dimen/margin20"
+        android:layout_marginEnd="@dimen/margin30"
+        android:contentDescription="@string/kertas"
+        android:padding="@dimen/padding5"
+        android:src="@drawable/kertas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ivbatu2"
+        app:layout_constraintTop_toBottomOf="@+id/ivbatu2" />
+
+    <ImageView
+        android:id="@+id/ivgunting2"
+        android:layout_width="@dimen/layout100"
+        android:layout_height="@dimen/layout100"
+        android:layout_marginTop="@dimen/margin20"
+        android:layout_marginEnd="@dimen/margin30"
+        android:contentDescription="@string/gunting"
+        android:padding="@dimen/padding5"
+        android:src="@drawable/gunting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ivkertas2"
+        app:layout_constraintTop_toBottomOf="@+id/ivkertas2" />
+
+    <ImageView
+        android:id="@+id/ivreset"
+        android:layout_width="@dimen/layout60"
+        android:layout_height="@dimen/layout60"
+        android:layout_marginEnd="@dimen/margin10"
+        android:layout_marginBottom="@dimen/margin10"
+        android:src="@drawable/refresh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivwin"
+        android:layout_width="@dimen/layout120"
+        android:layout_height="@dimen/layout100"
+        android:layout_marginTop="@dimen/margin180"
+        android:src="@drawable/vs"
+        app:layout_constraintEnd_toStartOf="@+id/ivkertas2"
+        app:layout_constraintStart_toEndOf="@+id/ivkertas1"
+        app:layout_constraintTop_toBottomOf="@+id/ivtitle" />
+
+    <ImageView
+        android:id="@+id/ivhome"
+        android:layout_width="@dimen/layout60"
+        android:layout_height="@dimen/layout60"
+        android:layout_marginStart="@dimen/margin10"
+        android:layout_marginBottom="@dimen/margin10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home_ico" />
+
+    <ImageView
+        android:id="@+id/ivclose"
+        android:layout_width="@dimen/layout60"
+        android:layout_height="@dimen/layout60"
+        android:layout_marginTop="@dimen/margin10"
+        android:layout_marginEnd="@dimen/margin10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/exit_ico" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Suit</string>
+    <string name="pemain_1">Pemain 1</string>
+    <string name="computer">COM</string>
+    <string name="batu">Batu</string>
+    <string name="kertas">Kertas</string>
+    <string name="gunting">Gunting</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_landing1">Bermain suit melawan sesama \npemain.</string>
+    <string name="text_landing2">Bermain suit melawan komputer</string>
+    <string name="text_landing3">Tuliskan namamu di bawah</string>
+</resources>
