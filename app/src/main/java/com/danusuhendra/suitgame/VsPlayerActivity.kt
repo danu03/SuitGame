@@ -108,6 +108,8 @@ class VsPlayerActivity : AppCompatActivity(), IMainSuit {
     }
 
     override fun onBackPressed() {
+        val name = intent.getStringExtra("nama") as String
+        tvpemain.text = name
         val alertDialog = this.let {
             val builder = AlertDialog.Builder(it)
             builder.apply {
