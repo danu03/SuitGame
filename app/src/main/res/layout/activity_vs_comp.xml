@@ -16,13 +16,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/tittle" />
 
-    <ImageView
-        android:id="@+id/ivpemain1"
+    <TextView
+        android:id="@+id/tvpemain"
         android:layout_width="@dimen/layout150"
         android:layout_height="@dimen/layout40"
         android:layout_marginStart="@dimen/margin30"
         android:layout_marginTop="@dimen/margin10"
-        android:src="@drawable/pemain1"
+        android:text="Pemain 1"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"
+        android:fontFamily="@font/comicbd"
+        android:textAlignment="viewStart"
+        android:textColor="@color/colorPrimaryDark"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivtitle" />
 
@@ -36,7 +41,7 @@
         android:contentDescription="@string/batu"
         android:src="@drawable/batu"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivpemain1" />
+        app:layout_constraintTop_toBottomOf="@+id/tvpemain" />
 
     <ImageView
         android:id="@+id/ivkertas1"
@@ -64,13 +69,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivkertas1" />
 
-    <ImageView
-        android:id="@+id/ivcomp"
+    <TextView
+        android:id="@+id/tvcomp"
         android:layout_width="@dimen/layout150"
         android:layout_height="@dimen/layout40"
-        android:layout_marginTop="@dimen/margin10"
-        android:src="@drawable/com"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/comicbd"
+        android:text="CPU"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/ivbatu2"
         app:layout_constraintTop_toBottomOf="@+id/ivtitle" />
 
@@ -84,7 +96,7 @@
         android:contentDescription="@string/batu"
         android:src="@drawable/batu"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivcomp" />
+        app:layout_constraintTop_toBottomOf="@+id/tvcomp" />
 
     <ImageView
         android:id="@+id/ivkertas2"
@@ -122,12 +134,19 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <ImageView
+    <TextView
         android:id="@+id/ivwin"
-        android:layout_width="@dimen/layout120"
-        android:layout_height="@dimen/layout100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin180"
-        android:src="@drawable/vs"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:fontFamily="@font/comicbd"
+        android:rotation="-20"
+        android:text="VS"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="50sp"
         app:layout_constraintEnd_toStartOf="@+id/ivkertas2"
         app:layout_constraintStart_toEndOf="@+id/ivkertas1"
         app:layout_constraintTop_toBottomOf="@+id/ivtitle" />

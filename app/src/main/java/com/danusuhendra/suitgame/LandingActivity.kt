@@ -47,11 +47,15 @@ class LandingActivity : AppCompatActivity() {
             if (indexPage == 1) {
                 view_pager.currentItem = indexPage + 1
             } else if (indexPage == 2) {
-                name = edtNama.text.toString()
-                val intent = Intent(this, MainActivity::class.java)
-                intent.putExtra("nama", name)
-                startActivity(intent)
-                finish()
+                if (edtNama.text.isNullOrBlank()) {
+                    Toast.makeText(this, "Masukan nama terlebih dahulu", Toast.LENGTH_SHORT).show()
+                } else {
+                    name = edtNama.text.toString()
+                    val intent = Intent(this, MainActivity::class.java)
+                    intent.putExtra("nama", name)
+                    startActivity(intent)
+                    finish()
+                }
             }
         }
     }
