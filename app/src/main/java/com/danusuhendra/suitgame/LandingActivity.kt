@@ -7,6 +7,7 @@ import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.viewpager.widget.ViewPager
+import com.danusuhendra.suitgame.Adapter.AdapterViewPager
 import kotlinx.android.synthetic.main.activity_landing.*
 import kotlinx.android.synthetic.main.fragment_landing3.*
 
@@ -17,7 +18,9 @@ class LandingActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_landing)
 
-        val adapter = AdapterViewPager(supportFragmentManager)
+        val adapter = AdapterViewPager(
+            supportFragmentManager
+        )
         view_pager.adapter = adapter
         dots_indicator.setViewPager(view_pager)
 

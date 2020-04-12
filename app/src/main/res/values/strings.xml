@@ -11,4 +11,7 @@
     <string name="text_landing1">Bermain suit melawan sesama \npemain.</string>
     <string name="text_landing2">Bermain suit melawan komputer</string>
     <string name="text_landing3">Tuliskan namamu di bawah</string>
+    <string name="pemain_2">Pemain 2</string>
+    <string name="pemain_1">Pemain 1</string>
+    <string name="cpu">CPU</string>
 </resources>
